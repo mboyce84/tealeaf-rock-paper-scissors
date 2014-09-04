@@ -1,10 +1,10 @@
 CHOICES = { 'r' => 'rock',
-            'p' => 'paper',
-            's' => 'scissors'}
+  'p' => 'paper',
+  's' => 'scissors'}
 
-@computer_score = 0
-@player_score = 0
-@player_name
+  @computer_score = 0
+  @player_score = 0
+  @player_name
 
 def greet
   say "Let's play rock, paper, scissors."
@@ -14,7 +14,7 @@ def greet
 end
 
 def say(msg)
-	puts "#{msg}"
+  puts "#{msg}"
 end
 
 def line
@@ -23,7 +23,7 @@ end
 
 def play
   line
-	say "What's your move? R , P or S?"
+  say "What's your move? R , P or S?"
   @player_choice = gets.chomp.downcase
   @computer_choice = CHOICES.keys.sample
 end
@@ -57,8 +57,8 @@ def compare
     @computer_score += 1
     
   end
-    display_score
-    play_again
+  display_score
+  play_again
 end
 
 def launch!
